@@ -1,0 +1,19 @@
+#volume-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#volume-container label {
+  font-size: 1.5rem;
+}
+#volume-container div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#volume-container div span {
+  width: 2rem;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=volume.css.map */

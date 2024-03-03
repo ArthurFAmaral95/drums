@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+#root {
+  background-color: rgb(173, 166, 166);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/*# sourceMappingURL=globals.css.map */

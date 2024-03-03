@@ -1,0 +1,21 @@
+@use "variables";
+
+#drum-pads-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drum-pad {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$drum-pads-bg-color;
+  color: white;
+  cursor: pointer;
+  border-radius: variables.$border-radius;
+  font-size: 2rem;
+}

@@ -1,0 +1,12 @@
+#drum-machine {
+  border: 0.5rem solid orange;
+  width: 70rem;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: lightgray;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=app.css.map */

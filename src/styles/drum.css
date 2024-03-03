@@ -1,0 +1,21 @@
+#drum-pads-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drum-pad {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=drum.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/onOffButton.scss","../sass/_variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA,YCToB;;ADWpB;EACE;EACA,YCXmB;;;ADevB;EACE;EACA,YCnBoB;;ADqBpB;EACE;EACA,YCrBmB;;;ADyBvB;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA,kBC1Cc;ED2Cd;EACA","file":"onOffButton.css"}

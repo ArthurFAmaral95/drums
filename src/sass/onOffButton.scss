@@ -1,0 +1,46 @@
+@use "variables";
+
+#button-container {
+  width: 7.6rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#button-container.on {
+  background-color: green;
+  transition: variables.$bg-color-transition;
+
+  #button {
+    transform: translateX(3.8rem);
+    transition: variables.$transform-transition;
+  }
+}
+
+#button-container.off {
+  background-color: red;
+  transition: variables.$bg-color-transition;
+
+  #button {
+    transform: translateX(0);
+    transition: variables.$transform-transition;
+  }
+}
+
+#button-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#button {
+  width: 3.8rem;
+  height: 2rem;
+  background-color: variables.$page-bg-color;
+  position: absolute;
+  cursor: pointer;
+}
