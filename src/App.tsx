@@ -6,12 +6,6 @@ import { Display } from "./components/Display"
 import { OnOffButton } from "./components/OnOffButton"
 import { VolumeInput } from "./components/VolumeInput"
 
-import { useAppDispatch, useAppSelector } from "./app/hooks"
-
-import { playDrums } from "./features/playWithKeys/playWithKeysSlice"
-import { setTextDisplay } from "./features/displayText/displayTextSlice"
-import { selectDrumOn } from "./features/turnOnOff/turnOnOffSlice"
-
 const App = () => {
   const drumPads = [
     {
@@ -60,33 +54,6 @@ const App = () => {
       description: "Closed-HH",
     },
   ]
-  const drumsOn = useAppSelector(selectDrumOn)
-
-  const dispatch = useAppDispatch()
-
-  if (drumsOn) {
-    document.addEventListener("keypress", e => {
-      drumPads.forEach(pad => {
-        if (pad.key === e.key.toUpperCase()) {
-          dispatch(setTextDisplay(pad.description))
-        }
-      })
-
-      dispatch(playDrums(""))
-      dispatch(playDrums(e.key))
-    })
-  } else {
-    document.removeEventListener("keypress", e => {
-      drumPads.forEach(pad => {
-        if (pad.key === e.key.toUpperCase()) {
-          dispatch(setTextDisplay(pad.description))
-        }
-      })
-
-      dispatch(playDrums(""))
-      dispatch(playDrums(e.key))
-    })
-  }
 
   return (
     <div id="drum-machine">

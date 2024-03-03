@@ -2,7 +2,6 @@ import "../styles/onOffButton.css"
 
 import { useAppDispatch, useAppSelector } from "../app/hooks"
 import { selectDrumOn, turnOnOff } from "../features/turnOnOff/turnOnOffSlice"
-import { playDrums } from "../features/playWithKeys/playWithKeysSlice"
 
 export function OnOffButton() {
   const drumsOn = useAppSelector(selectDrumOn)
@@ -18,7 +17,6 @@ export function OnOffButton() {
         id="button"
         onClick={() => {
           dispatch(turnOnOff())
-          dispatch(playDrums(""))
         }}
       ></div>
     </div>

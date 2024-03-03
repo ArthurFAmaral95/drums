@@ -5,7 +5,6 @@ import {
   selectVolume,
   setVolume,
 } from "../features/controlVolume/controlVolumeSlice"
-import { playDrums } from "../features/playWithKeys/playWithKeysSlice"
 
 export function VolumeInput() {
   const volume = useAppSelector(selectVolume)
@@ -25,7 +24,6 @@ export function VolumeInput() {
           step={0.05}
           onChange={e => {
             dispatch(setVolume(Number(e.target.value)))
-            dispatch(playDrums(""))
           }}
         />
         <span>{Math.floor(volume * 100)}</span>
